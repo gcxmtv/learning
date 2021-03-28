@@ -1,0 +1,20 @@
+package treino;
+
+import javax.swing.JOptionPane;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		
+		
+		double[] aniversariantes = new double[3];
+		aniversariantes[0] = JOptionPane.showInputDialog("Insira o nome do aniversariante do mes:");
+		aniversariantes[1] = JOptionPane.showInputDialog("Insira o nome do aniversariante do mes:");
+		aniversariantes[2] = JOptionPane.showInputDialog("Insira o nome do aniversariante do mes:");
+		
+		System.out.println(aniversariantes[1]);
+		
+	}
+	
+	
+}

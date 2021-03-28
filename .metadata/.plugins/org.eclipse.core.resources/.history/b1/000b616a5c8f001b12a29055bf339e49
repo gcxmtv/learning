@@ -1,0 +1,22 @@
+package treino;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class CollectionSet {
+
+	
+	public static void main(String[] args) {
+		
+		Set<String> aprovados = new HashSet<String>();
+		aprovados.add("Kissia Dias");
+		aprovados.add("Giancarlo");
+		aprovados.add("Vagner Machado");
+		aprovados.add("MAtheus");
+		aprovados.add("Paulo");
+		
+		for ( var nome: aprovados) { System.out.println(nome);}
+				
+				
+	}
+}

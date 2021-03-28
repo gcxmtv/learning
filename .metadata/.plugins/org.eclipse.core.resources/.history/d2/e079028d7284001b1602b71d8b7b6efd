@@ -1,0 +1,15 @@
+package Exercicios;
+
+public class testeVeF {
+
+	
+	public static void main(String[] args) {
+		
+		boolean numero1 = true;
+		boolean numero2 = false;
+		boolean numero3 = false;
+		
+		if ( numero1 && numero2 ) { System.err.println("é verdadeiro"); }
+	else { System.out.println("nao deu certo"); }
+	
+}}

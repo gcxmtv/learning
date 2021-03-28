@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Aprendizado"/>
+			<item value="botMoney"/>
+			<item value="br.devmedia.selenium-testes"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Aprendizado"/>
+			<item value="botMoney"/>
+			<item value="selenium-driver-web"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

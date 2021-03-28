@@ -1,0 +1,21 @@
+package jantar;
+
+public class Garcom {
+	
+	String pergBoasVindas = "";
+	String pergCardapioEnt = "";
+	String pergCardapioPrat = "";
+	String pergCardapioSob = "";
+	String pergBebidas = "";
+	
+	
+	public void Garcom() {
+		
+		
+		
+		
+	};
+	
+	
+
+}

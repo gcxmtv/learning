@@ -1,0 +1,12 @@
+
+	if ( yesOrNot.equalsIgnoreCase("sim")) {
+		System.out.println("blz.. ta caminhando");
+		
+	} else { System.out.println("Nao tenho ideia do que voce veio fazer aqiu..."); }
+	
+	
+} else { System.out.println("Não sei como lhe ajudar entao..."); }
+
+
+
+

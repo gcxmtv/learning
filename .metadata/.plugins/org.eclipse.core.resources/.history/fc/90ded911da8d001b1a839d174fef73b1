@@ -1,0 +1,109 @@
+package jantar;
+
+import java.util.Scanner;
+
+public class Sistema {
+
+	public static void main(String[] args) {
+
+		Garcom garcom = new Garcom();
+		var resposta = new Scanner(System.in);
+		Cardapio cardapio = new Cardapio();
+		String answer = "";
+		String itensConta = "";
+
+		System.out.println("Olá, " + garcom.recepcao + "! \n" + "Seja Bem-vindo(a) ao nosso restaurante virtual."
+				+ "\n Você deseja ver nosso cardapio? (sim/nao)");
+		answer = resposta.nextLine();
+
+		if (answer.equalsIgnoreCase("sim")) {
+
+			cardapio.getCardapioCompleto();
+
+			System.out.println("Podemos iniciar seu pedido? (sim/nao/sair)");
+			answer = resposta.nextLine().toLowerCase();
+
+			if (answer.equals("sim")) {
+
+				System.out.println("Me diga o código do seu pedido conforme esta no cardápio. (Ex.: E1, ou P1, etc.)");
+
+				answer = resposta.next().toLowerCase();
+
+				switch (answer) {
+
+				case "e1":
+					itensConta += cardapio.e1ent;
+					System.out.println("Excelent entrada, deseja pedir algo mais?");
+					answer = resposta.next().toLowerCase();
+					break;
+
+				case "e2":
+					itensConta += cardapio.e2ent;
+					System.out.println("Excelente entrada, deseja pedir algo mais?");
+				case "e3":
+					itensConta += cardapio.e3ent;
+					System.out.println("Excelent entrada, deseja pedir algo mais?");
+					break;
+
+				case "p1":
+					itensConta += cardapio.p1prato;
+					System.out.println("Excelent prato, deseja pedir algo mais?");
+					break;
+				case "p2":
+					itensConta += cardapio.p2prato;
+					System.out.println("Excelent prato, deseja pedir algo mais?");
+					break;
+				case "p3":
+					itensConta += cardapio.p3prato;
+					System.out.println("Excelent prato, deseja pedir algo mais?");
+					break;
+				case "s1":
+					itensConta += cardapio.s1sob;
+					System.out.println("Excelent sobremesa, deseja pedir algo mais?");
+					break;
+				case "s2":
+					itensConta += cardapio.s2sob;
+					System.out.println("Excelent sobremesa, deseja pedir algo mais?");
+					break;
+				case "s3":
+					itensConta += cardapio.s3sob;
+					System.out.println("Excelent sobremesa, deseja pedir algo mais?");
+					break;
+				}
+
+			}
+
+			else if {
+				System.out.println(
+						"Certo, Você ja tem em mente seu pedido ou deseja sair de nosso restaurante virtual? (sim/nao/sair)");
+				answer = resposta.nextLine();
+
+				switch (answer) {
+
+				case "sim":
+					System.out.println("Me informe o/os codigo(s) do seu pedido por favor.");
+					break;
+
+				case "nao":
+					System.out.println("Então porque voce não da uma olhada em nosso cardapio?");
+					cardapio.getCardapioCompleto();
+					break;
+
+				case "sair":
+					System.out.println("Tudo bem, tenha um(a) " + garcom.recepcao + "!!");
+					System.exit(0);
+
+				}
+
+				else { System.out.println("Tudo bem, tenha um(a)" + );
+				
+			}
+
+			System.out.println(itensConta);
+
+			resposta.next().toLowerCase();
+
+			resposta.close();
+		}
+	}
+}

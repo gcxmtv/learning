@@ -1,0 +1,53 @@
+package botMoney;
+import java.io.File;
+
+// import org.graalvm.compiler.nodeinfo.InputType;
+import org.junit.jupiter.params.shadow.com.univocity.parsers.common.input.CharInput;
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByCssSelector;
+import org.openqa.selenium.By.ByTagName;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.server.handler.SendKeys;
+import org.openqa.selenium.support.ByIdOrName;
+import org.openqa.selenium.support.pagefactory.ByAll;
+
+import jdk.jfr.internal.consumer.StringParser;
+
+//TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:https://app.amazonpedido.com/#/login ATTR=* CONTENT=91993798914
+
+class teste {
+
+	public static void main(String[] args) {
+
+		File file = new File("drivers/IEDriverServer.exe");
+		System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+
+		WebDriver driver = new ChromeDriver();
+		long telefone = 91993798914l;
+		String cadTelefone = String.valueOf(telefone);
+		
+		String login = "gcxmtv@gmail.com";
+		String password = "Alice!@1";
+		
+		//a[@href ='/docs/configuration']
+		// //*[@id="email"]
+		
+		String xPathLoginFacebook = "//*[@id=\"email\"]";
+		String xPathSenhaFacebook = "//*[@id=\"pass\"]";
+		String bottonLoginFacebook = "//*[@id=\"u_0_d_OV\"]/text()";
+		
+		
+		driver.get("https://www.facebook.com");
+		driver.findElement(By.xpath(xPathLoginFacebook)).sendKeys(login);
+		driver.findElement(By.xpath(xPathSenhaFacebook)).sendKeys(password);
+		driver.findElement(By.xpath(bottonLoginFacebook)).click();
+		//WebElement loginButtonId = driver.findElement(By.xpath(bottonLoginFacebook));
+			    //Xpath of login button i have get For firefox browser
+//		loginButtonId.click();
+
+	
+	}
+}

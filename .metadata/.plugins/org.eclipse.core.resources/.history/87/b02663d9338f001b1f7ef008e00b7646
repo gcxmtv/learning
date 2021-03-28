@@ -1,0 +1,29 @@
+package treino;
+
+import java.util.Random;
+
+public class sorteioArray {
+
+public static void main(String[] args) {
+	
+Random numAleatorio = new Random();
+
+	double megaSena[] = new double[10]; {
+	megaSena[0] = 91;
+	megaSena[1] = 92;
+	megaSena[2] = 93;
+	megaSena[3] = 94;
+	megaSena[4] = 95;
+	megaSena[6] = 96;
+	megaSena[7] = 97;
+	megaSena[8] = 98;
+	megaSena[9] = 99;
+	}
+	
+	int arrayRandom = numAleatorio.nextInt(10);
+
+	int sorteioArray = (int) megaSena[arrayRandom];
+	
+			System.out.println(sorteioArray);
+
+}}

@@ -1,0 +1,25 @@
+package treino;
+
+import javax.swing.JOptionPane;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		
+		
+		String[] aniversariantes = new String[3];
+		aniversariantes[0] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		aniversariantes[1] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		aniversariantes[2] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		
+		int primeiroAniversariante = Integer.parseInt(aniversariantes[0]);
+		int segundoAniversariante = Integer.parseInt(aniversariantes[1]);
+		int terceiroAniversariante = Integer.parseInt(aniversariantes[2]);
+		
+		
+		System.out.println( (primeiroAniversariante + segundoAniversariante + terceiroAniversariante ) / aniversariantes.length);
+		
+	}
+	
+	
+}

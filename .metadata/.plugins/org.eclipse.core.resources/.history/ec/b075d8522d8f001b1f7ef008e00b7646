@@ -1,0 +1,20 @@
+package treino;
+
+import javax.swing.JOptionPane;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		
+		
+		String[] aniversariantes = new String[3];
+		aniversariantes[0] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		aniversariantes[1] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		aniversariantes[2] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		
+		System.out.println(aniversariantes[1]);
+		
+	}
+	
+	
+}

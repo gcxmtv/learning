@@ -1,0 +1,38 @@
+package treino;
+
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		Random numAleatorio = new Random();
+
+		String[] aniversariantes = new String[3];
+		aniversariantes[0] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		aniversariantes[1] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+		aniversariantes[2] = JOptionPane.showInputDialog("Insira um valor de 0 a 100 :");
+
+		int primeiroAniversariante = Integer.parseInt(aniversariantes[0]);
+		int segundoAniversariante = Integer.parseInt(aniversariantes[1]);
+		int terceiroAniversariante = Integer.parseInt(aniversariantes[2]);
+
+		System.out.println(
+				(primeiroAniversariante + segundoAniversariante + terceiroAniversariante) / aniversariantes.length);
+
+		double megaSena[] = new double[10];
+		megaSena[0] = 2;
+		megaSena[1] = 0;
+		megaSena[2] = 5;
+		megaSena[3] = 8;
+		megaSena[4] = 13;
+		megaSena[6] = 23;
+		megaSena[7] = 1;
+		megaSena[8] = 22;
+		megaSena[9] = 50;
+
+				System.out.println(numAleatorio.nextInt(megaSena.length));
+
+	}
+}

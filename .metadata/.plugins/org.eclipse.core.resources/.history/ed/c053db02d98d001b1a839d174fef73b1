@@ -1,0 +1,54 @@
+package jantar;
+
+public class NaoSei {
+	
+	
+	
+	public void respostaSimCardapio() {
+	
+		
+	switch (answer) {
+
+	case "e1":
+		
+		itensConta += cardapio.e1ent;
+		System.out.println("Excelent entrada, deseja pedir algo mais?");
+		answer = resposta.next().toLowerCase();
+		break;
+
+	case "e2":
+		itensConta += cardapio.e2ent;
+		System.out.println("Excelente entrada, deseja pedir algo mais?");
+	case "e3":
+		itensConta += cardapio.e3ent;
+		System.out.println("Excelent entrada, deseja pedir algo mais?");
+		break;
+
+	case "p1":
+		itensConta += cardapio.p1prato;
+		System.out.println("Excelent prato, deseja pedir algo mais?");
+		break;
+	case "p2":
+		itensConta += cardapio.p2prato;
+		System.out.println("Excelent prato, deseja pedir algo mais?");
+		break;
+	case "p3":
+		itensConta += cardapio.p3prato;
+		System.out.println("Excelent prato, deseja pedir algo mais?");
+		break;
+	case "s1":
+		itensConta += cardapio.s1sob;
+		System.out.println("Excelent sobremesa, deseja pedir algo mais?");
+		break;
+	case "s2":
+		itensConta += cardapio.s2sob;
+		System.out.println("Excelent sobremesa, deseja pedir algo mais?");
+		break;
+	case "s3":
+		itensConta += cardapio.s3sob;
+		System.out.println("Excelent sobremesa, deseja pedir algo mais?");
+		break;
+	}
+	}
+
+}

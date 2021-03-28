@@ -1,0 +1,75 @@
+package jantar;
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class Sistema {
+
+	public static void main(String[] args) {
+
+		Garcom garcom = new Garcom();
+		var resposta = new Scanner(System.in);
+		Cardapio cardapio = new Cardapio();
+		String answer = "";
+
+		answer = JOptionPane.showInputDialog("Olá, " + garcom.recepcao + "! \n" + "Seja Bem-vindo(a) ao nosso restaurante virtual."
+				+ "\n Você deseja ver nosso cardapio? (sim/nao)");
+		
+		if (answer.equalsIgnoreCase("sim")) {
+
+			cardapio.getCardapioCompleto();
+
+			System.out.println("Podemos iniciar seu pedido? (sim/nao)");
+			answer = resposta.nextLine().toLowerCase();
+
+			if (answer.equals("sim")) {
+
+				System.out.println("Me diga o código do seu pedido conforme esta no cardápio. (Ex.: E1, ou P1, etc.)");
+				answer = resposta.nextLine().toLowerCase();
+
+				switch (answer) {
+
+				case "E1":
+					
+					System.out.println("Qual seu pedido?");
+					break;
+
+				case "nao":
+
+					System.out.println("Entao vai pra pqp!!");
+					break;
+
+				}
+			}
+
+			if (answer.equals("nao")) {
+				System.out.println(
+						"Certo, Você ja tem em mente seu pedido ou deseja sair de nosso restaurante virtual? (sim/nao/sair)");
+				answer = resposta.nextLine();
+
+				switch (answer) {
+				
+				case "sim":
+					System.out.println("Me informe o/os codigo(s) do seu pedido por favor.");
+					break;
+
+				case "nao":
+					System.out.println("Então porque voce não da uma olhada em nosso cardapio?");
+					cardapio.getCardapioCompleto();
+					break;
+
+				case "sair":
+					System.out.println("Tudo bem, tenha um(a) " + garcom.recepcao + "!!");
+					System.exit(0);
+
+				}
+				
+				
+				
+			}
+
+			resposta.next();
+
+			resposta.close();
+		}
+	}
+}

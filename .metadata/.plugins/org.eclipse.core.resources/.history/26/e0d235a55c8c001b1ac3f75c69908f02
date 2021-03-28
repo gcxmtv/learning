@@ -1,0 +1,56 @@
+package jantar;
+
+public class Cardapio {
+
+	// ENTRADAS
+	
+	String e1 ="";
+	String e2 ="";
+	String e3 ="";
+	
+	// PRATOS PRINCIPAIS
+	
+	String p1 ="";
+	String p2 ="";
+	String p3 ="";
+	
+	// SOBREMESAS
+	
+	String s1 ="";
+	String s2 ="";
+	String s3 ="";
+	
+	
+	
+	
+	
+	void cardapioEntradas (){
+		
+		e1 = "Asinhas de Frango";
+		e2 = "Dadinho de Tapioca";
+		e3 = "Batata-Frita";
+		
+		
+	};
+	
+	void cardapioPratosPrincipais() {
+		
+		p1 = "Filé ao molho madeira";
+		p2 = "Caldeirada";
+		p3 = "Camarão ao alho e óleo";
+		
+		
+	};
+	
+	
+	void cardapioSobremesas() {
+		
+		s1 = "Petit Gateau";
+		s2 = "Pudim";
+		s3 = "Sorvete";
+		
+	};
+
+
+
+}
